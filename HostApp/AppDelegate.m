@@ -21,4 +21,8 @@
     [zeplugin release];
 }
 
+- (IBAction)magicButtonClicked:(id)sender {
+    [zeplugin magicRequestedWithText: [textFieldOne stringValue]];
+}
+
 @end

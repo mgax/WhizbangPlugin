@@ -10,4 +10,6 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTextField *textFieldOne;
 
+- (IBAction)magicButtonClicked:(id)sender;
+
 @end

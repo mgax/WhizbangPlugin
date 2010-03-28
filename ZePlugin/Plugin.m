@@ -3,6 +3,11 @@
 
 @implementation Plugin
 
+static NSObject <PythonLink> *pylink;
++ (void)setPyLink:(NSObject <PythonLink> *)obj {
+    pylink = [obj retain];
+}
+
 + (NSObject <WhizbangPlugin> *)initializePlugin {
     Plugin *instance = [Plugin alloc];
     [instance _setupPythonEnvironment];
@@ -18,7 +23,7 @@
     NSString *src = [NSString stringWithContentsOfFile:path
                                               encoding:NSUTF8StringEncoding
                                                  error:NULL];
-    const char *c_src = [src cStringUsingEncoding:NSUTF8StringEncoding];
+    const char *c_src = [src UTF8String];
 
     // set up new barebones module
     py_module = PyImport_AddModule("zeplugin_startup");
@@ -30,7 +35,10 @@
     Py_DECREF(py_builtins);
 
     // run the setup code and populate our new module
+    const char* bundle_path = [[bundle bundlePath] UTF8String];
     PyObject *py_mod_dict = PyModule_GetDict(py_module);
+    PyDict_SetItemString(py_mod_dict, "bundle_path",
+                         PyString_FromString(bundle_path));
     PyObject *result = PyRun_String(c_src, Py_file_input,
                                     py_mod_dict, py_mod_dict);
     if (result == NULL) return [self _handlePythonException];
@@ -47,6 +55,13 @@
         PyErr_PrintEx(0);
         PyErr_Clear();
     }
+}
+
+- (void)magicRequestedWithText:(NSString *)text {
+    NSMutableDictionary *kwargs = [NSMutableDictionary dictionary];
+    [kwargs setValue:@"magic" forKey:@"method"];
+    [kwargs setValue:text forKey:@"text"];
+    [pylink invokeWith:kwargs];
 }
 
 @end

@@ -20,7 +20,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 3AF55E08115F513A004DD845 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3AF55EB9115F58C0004DD845 /* ZePlugin */;
+			remoteGlobalIDString = 3AF55EB9115F58C0004DD845;
 			remoteInfo = ZePlugin;
 		};
 /* End PBXContainerItemProxy section */
