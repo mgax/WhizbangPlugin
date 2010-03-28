@@ -59,7 +59,7 @@ static NSObject <PythonLink> *pylink;
 
 - (void)magicRequestedWithText:(NSString *)text {
     NSMutableDictionary *kwargs = [NSMutableDictionary dictionary];
-    [kwargs setValue:@"magic" forKey:@"method"];
+    [kwargs setValue:@"magic_requested" forKey:@"invocation_name"];
     [kwargs setValue:text forKey:@"text"];
     [pylink invokeWith:kwargs];
 }
