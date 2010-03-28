@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AF55E1E115F51F2004DD845 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF55E1D115F51F2004DD845 /* main.m */; };
+		3AF55E22115F5283004DD845 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF55E21115F5283004DD845 /* AppDelegate.m */; };
+		3AF55E29115F534D004DD845 /* GUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF55E28115F534D004DD845 /* GUI.xib */; };
+		3AF55F5F115F64C2004DD845 /* Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF55F5E115F64C2004DD845 /* Plugin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AF55FA6115F6745004DD845 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AF55E08115F513A004DD845 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AF55EB9115F58C0004DD845 /* ZePlugin */;
+			remoteInfo = ZePlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3AF55E14115F515C004DD845 /* WhizbangHostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhizbangHostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF55E17115F515C004DD845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = HostApp/Info.plist; sourceTree = "<group>"; };
+		3AF55E1D115F51F2004DD845 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = HostApp/main.m; sourceTree = "<group>"; };
+		3AF55E20115F5283004DD845 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = HostApp/AppDelegate.h; sourceTree = "<group>"; };
+		3AF55E21115F5283004DD845 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = HostApp/AppDelegate.m; sourceTree = "<group>"; };
+		3AF55E28115F534D004DD845 /* GUI.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GUI.xib; path = HostApp/GUI.xib; sourceTree = "<group>"; };
+		3AF55EBA115F58C0004DD845 /* ZePlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZePlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF55EBB115F58C0004DD845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ZePlugin/Info.plist; sourceTree = "<group>"; };
+		3AF55F5D115F64C2004DD845 /* Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plugin.h; path = ZePlugin/Plugin.h; sourceTree = "<group>"; };
+		3AF55F5E115F64C2004DD845 /* Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Plugin.m; path = ZePlugin/Plugin.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AF55E12115F515C004DD845 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF55EB8115F58C0004DD845 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AF55E06115F513A004DD845 = {
+			isa = PBXGroup;
+			children = (
+				3AF55E15115F515C004DD845 /* Products */,
+				3AF55E17115F515C004DD845 /* Info.plist */,
+				3AF55E1D115F51F2004DD845 /* main.m */,
+				3AF55E20115F5283004DD845 /* AppDelegate.h */,
+				3AF55E21115F5283004DD845 /* AppDelegate.m */,
+				3AF55E28115F534D004DD845 /* GUI.xib */,
+				3AF55EBB115F58C0004DD845 /* Info.plist */,
+				3AF55F5D115F64C2004DD845 /* Plugin.h */,
+				3AF55F5E115F64C2004DD845 /* Plugin.m */,
+			);
+			sourceTree = "<group>";
+		};
+		3AF55E15115F515C004DD845 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AF55E14115F515C004DD845 /* WhizbangHostApp.app */,
+				3AF55EBA115F58C0004DD845 /* ZePlugin.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AF55E13115F515C004DD845 /* WhizbangHostApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AF55E1A115F515C004DD845 /* Build configuration list for PBXNativeTarget "WhizbangHostApp" */;
+			buildPhases = (
+				3AF55E10115F515C004DD845 /* Resources */,
+				3AF55E11115F515C004DD845 /* Sources */,
+				3AF55E12115F515C004DD845 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AF55FA7115F6745004DD845 /* PBXTargetDependency */,
+			);
+			name = WhizbangHostApp;
+			productName = WhizbangHostApp;
+			productReference = 3AF55E14115F515C004DD845 /* WhizbangHostApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3AF55EB9115F58C0004DD845 /* ZePlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AF55EBE115F58C0004DD845 /* Build configuration list for PBXNativeTarget "ZePlugin" */;
+			buildPhases = (
+				3AF55EB6115F58C0004DD845 /* Resources */,
+				3AF55EB7115F58C0004DD845 /* Sources */,
+				3AF55EB8115F58C0004DD845 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZePlugin;
+			productName = ZePlugin;
+			productReference = 3AF55EBA115F58C0004DD845 /* ZePlugin.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AF55E08115F513A004DD845 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3AF55E0B115F513A004DD845 /* Build configuration list for PBXProject "WhizbangPlugin" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 3AF55E06115F513A004DD845;
+			productRefGroup = 3AF55E15115F515C004DD845 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AF55E13115F515C004DD845 /* WhizbangHostApp */,
+				3AF55EB9115F58C0004DD845 /* ZePlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AF55E10115F515C004DD845 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF55E29115F534D004DD845 /* GUI.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF55EB6115F58C0004DD845 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AF55E11115F515C004DD845 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF55E1E115F51F2004DD845 /* main.m in Sources */,
+				3AF55E22115F5283004DD845 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF55EB7115F58C0004DD845 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF55F5F115F64C2004DD845 /* Plugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AF55FA7115F6745004DD845 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AF55EB9115F58C0004DD845 /* ZePlugin */;
+			targetProxy = 3AF55FA6115F6745004DD845 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3AF55E09115F513A004DD845 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		3AF55E0A115F513A004DD845 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		3AF55E18115F515C004DD845 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = HostApp/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = WhizbangHostApp;
+			};
+			name = Debug;
+		};
+		3AF55E19115F515C004DD845 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "WhizbangHostApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = WhizbangHostApp;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		3AF55EBC115F58C0004DD845 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = ZePlugin/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ZePlugin;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3AF55EBD115F58C0004DD845 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "ZePlugin-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ZePlugin;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AF55E0B115F513A004DD845 /* Build configuration list for PBXProject "WhizbangPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF55E09115F513A004DD845 /* Debug */,
+				3AF55E0A115F513A004DD845 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AF55E1A115F515C004DD845 /* Build configuration list for PBXNativeTarget "WhizbangHostApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF55E18115F515C004DD845 /* Debug */,
+				3AF55E19115F515C004DD845 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AF55EBE115F58C0004DD845 /* Build configuration list for PBXNativeTarget "ZePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF55EBC115F58C0004DD845 /* Debug */,
+				3AF55EBD115F58C0004DD845 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AF55E08115F513A004DD845 /* Project object */;
+}
