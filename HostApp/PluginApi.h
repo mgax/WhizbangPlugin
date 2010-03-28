@@ -1,6 +1,6 @@
 @protocol WhizbangPlugin <NSObject>
 
-+ (void)pluginLoaded;
-+ (void)pluginWillUnload;
++ (NSObject <WhizbangPlugin> *)initializePlugin;
+- (void)applicationWillTerminate:(NSNotification *)notification;
 
 @end

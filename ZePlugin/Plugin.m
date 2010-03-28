@@ -1,21 +1,17 @@
 #import "Plugin.h"
-#import <Python/Python.h>
 
 
 @implementation Plugin
 
-+ (void)pluginLoaded {
++ (NSObject <WhizbangPlugin> *)initializePlugin {
+    Plugin *instance = [Plugin alloc];
+    [instance _setupPythonEnvironment];
+    return [instance autorelease];
+}
+
+- (void)_setupPythonEnvironment {
     Py_Initialize();
-    PyRun_SimpleString("print 'plugin loaded'");
-    [self _setupPythonEnvironment];
-}
 
-+ (void)pluginWillUnload {
-    PyRun_SimpleString("print 'plugin will unload'");
-    Py_Finalize();
-}
-
-+ (void)_setupPythonEnvironment {
     // read setup code from file in bundle
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     NSString *path = [bundle pathForResource:@"zeplugin_startup" ofType:@"py"];
@@ -25,7 +21,7 @@
     const char *c_src = [src cStringUsingEncoding:NSUTF8StringEncoding];
 
     // set up new barebones module
-    PyObject *py_module = PyImport_AddModule("zeplugin_startup");
+    py_module = PyImport_AddModule("zeplugin_startup");
     if (py_module == NULL) return [self _handlePythonException];
 
     PyObject *py_builtins = PyImport_ImportModule("__builtin__");
@@ -41,7 +37,12 @@
     Py_DECREF(result);
 }
 
-+ (void)_handlePythonException {
+- (void)applicationWillTerminate:(NSNotification *)notification {
+    PyRun_SimpleString("print 'plugin unloading'");
+    Py_Finalize();
+}
+
+- (void)_handlePythonException {
     if (PyErr_Occurred() != NULL) {
         PyErr_PrintEx(0);
         PyErr_Clear();
