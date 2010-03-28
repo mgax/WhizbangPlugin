@@ -4,5 +4,6 @@
 
 @interface Plugin : NSObject <WhizbangPlugin> {
 }
++ (void)_setupPythonEnvironment;
 
 @end

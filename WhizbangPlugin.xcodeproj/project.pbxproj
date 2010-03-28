@@ -12,6 +12,7 @@
 		3AF55E29115F534D004DD845 /* GUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF55E28115F534D004DD845 /* GUI.xib */; };
 		3AF55F5F115F64C2004DD845 /* Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF55F5E115F64C2004DD845 /* Plugin.m */; };
 		3AF56039115F6DB5004DD845 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF56038115F6DB5004DD845 /* Python.framework */; };
+		3AF56091115F722A004DD845 /* zeplugin_startup.py in Resources */ = {isa = PBXBuildFile; fileRef = 3AF56090115F722A004DD845 /* zeplugin_startup.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		3AF55F5E115F64C2004DD845 /* Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Plugin.m; path = ZePlugin/Plugin.m; sourceTree = "<group>"; };
 		3AF55FAE115F6848004DD845 /* PluginApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PluginApi.h; path = HostApp/PluginApi.h; sourceTree = "<group>"; };
 		3AF56038115F6DB5004DD845 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = /System/Library/Frameworks/Python.framework; sourceTree = "<absolute>"; };
+		3AF56090115F722A004DD845 /* zeplugin_startup.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = zeplugin_startup.py; path = ZePlugin/zeplugin_startup.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				3AF55F5E115F64C2004DD845 /* Plugin.m */,
 				3AF55FAE115F6848004DD845 /* PluginApi.h */,
 				3AF56038115F6DB5004DD845 /* Python.framework */,
+				3AF56090115F722A004DD845 /* zeplugin_startup.py */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF56091115F722A004DD845 /* zeplugin_startup.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
