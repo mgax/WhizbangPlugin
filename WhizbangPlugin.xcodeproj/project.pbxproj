@@ -11,6 +11,7 @@
 		3AF55E22115F5283004DD845 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF55E21115F5283004DD845 /* AppDelegate.m */; };
 		3AF55E29115F534D004DD845 /* GUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF55E28115F534D004DD845 /* GUI.xib */; };
 		3AF55F5F115F64C2004DD845 /* Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF55F5E115F64C2004DD845 /* Plugin.m */; };
+		3AF56039115F6DB5004DD845 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF56038115F6DB5004DD845 /* Python.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 		3AF55EBB115F58C0004DD845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ZePlugin/Info.plist; sourceTree = "<group>"; };
 		3AF55F5D115F64C2004DD845 /* Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plugin.h; path = ZePlugin/Plugin.h; sourceTree = "<group>"; };
 		3AF55F5E115F64C2004DD845 /* Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Plugin.m; path = ZePlugin/Plugin.m; sourceTree = "<group>"; };
+		3AF55FAE115F6848004DD845 /* PluginApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PluginApi.h; path = HostApp/PluginApi.h; sourceTree = "<group>"; };
+		3AF56038115F6DB5004DD845 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = /System/Library/Frameworks/Python.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF56039115F6DB5004DD845 /* Python.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +70,8 @@
 				3AF55EBB115F58C0004DD845 /* Info.plist */,
 				3AF55F5D115F64C2004DD845 /* Plugin.h */,
 				3AF55F5E115F64C2004DD845 /* Plugin.m */,
+				3AF55FAE115F6848004DD845 /* PluginApi.h */,
+				3AF56038115F6DB5004DD845 /* Python.framework */,
 			);
 			sourceTree = "<group>";
 		};
